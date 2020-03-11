@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="cssnonvanh.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery-3.3.1.min.js">
+</script><script src="jquery.validate.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+$(document).ready(function(e) {
+    
+        
+    $(".loginbtn").click(function(e) {
+        $("#id01").show();
+    });
+	$(".cancelbtn").click(function(e) {
+       $(location).attr('href',"non_len.html");
+    });
+	$(".signinbtn").click(function(e) {
+       $(location).attr('href',"dangky.html");
+    });	
+$(window).scroll(function () {
+              if ($(window).scrollTop() >= 99) {
+                  $('#menutruot').addClass('menu-fixed-top');
+              }
+
+
+              if ($(window).scrollTop() >= 100) {
+                  $('#menutruot ').addClass('show');
+              } else {
+                  $('#menutruot').removeClass('show menu-fixed-top');
+              }
+          });
+		  $("#form1").validate({
+                    rules: {
+                        
+                        uname: "required",          
+                        psw: {
+                            required: true,
+                            minlength: 5
+                        },
+                       
+					},
+                    messages: {
+                        uname: "Vui lòng nhập tên",
+                        psw: {
+                            required: 'Vui lòng nhập mật khẩu',
+                            minlength: 'Vui lòng nhập ít nhất 5 kí tự'
+                        },
+                                              
+					}
+                });
+	
+});
+</script>
+</head>
+<body>
+
+<!--start:header-->
+    <div class="header">
+    <!--start:nav-->
+      
+       <!--start:menu-->
+        	<div class="menu" id="menutruot">
+            	
+        	  <ul>
+              	<a href="web_ban_non - IndHat.html"><li id="logo"><span> Ind Hat</span>  <i class="fa fa-home" style="color:white;"></i></li></a>
+              	<li id="search">
+      					<input type="text" placeholder="Search.." name="search">
+                 </li>
+            	<li>
+                	<span ><i class="fa fa-align-justify" style="font-size:24px;color:#FFF;"></i></span>
+                	<ul class="such-menu">
+        				<li><a href="non_luoi_chai.html">Nón Lưỡi Chai</a></li><br />
+        				<li><a href="non_len.html">Nón Len</a></li><br />
+       					<li><a href="non_vanh.html">Nón Vành</a></li>
+						<li><a href="non_snap.html">Nón Snapback</a></li>
+     				</ul>
+               	</li>
+            		<li><i class="fa fa-user" style="font-size:24px;color:#FFF;"></i>
+                	<ul class="such-menu">
+        				<li><span class="loginbtn"  >Login</span></li>
+                        
+                        <br />
+        				<li><span class="signinbtn">Sign In</span></li>
+     				</ul>
+                </li>
+                	
+            	
+                <li><a href="#footer"><i class="fa fa-volume-control-phone"> </i> Liên Hệ </a></li>
+        	  </ul>
+        	  
+              <!--tao form login-->
+              			<div id="id01" class="modal">
+      						<form class="modal-content animate" action="" id="form1">
+                            <h1>Login</h1>
+        						<div class="imgcontainer">
+          							<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"> &times;</span>
+                 				</div>
+    
+			  <div class="container">
+          							<label for="uname"><b>Username</b></label>
+          							<input type="text" placeholder="Enter Username" name="uname" required>
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                    <button type="submit">Login</button>
+                                    <label>
+            						<input type="checkbox" checked="checked" name="remember"> Remember me
+          							</label>
+                                    
+          							<span class="psw">Forgot <a href="#">password?</a></span>
+       							
+       						  </div>
+    							
+             					 <div class="clearfix" style="background-color:#f1f1f1">
+                                <button type="button"  class="cancelbtn">Cancel</button>
+                                <button type="button"  class="signinbtn">Sign In</button>
+                              </div>
+                    		</form>
+              </div>
+       		  <!--end form login-->
+             
+                        
+       	  </div>
+        <!--end:menu-->
+
+        
+ 	<!--end:nav-->
+        <div id="baner">
+      <img src="hinh_header/bien-ao-len-cu-thanh-mu-len-sieu-cute-265309.jpg" width="1148" height="400"> </div>
+    </div>
+<!--end:header-->
+    
+<!--start:sale-->
+<div class="section">
+<div class="linktable">
+    <div><a href="non_luoi_chai.html">
+    <img src="hinh_header/New folder/non-ket-mu-luoi-trai-adidas-nike-snapback-nam-nu-dep-1111.jpg" width="300" height="300">
+    <span class="text-baner"><span class="text">Nón Kết</span></span> </div></a>
+    <div><a href="non_vanh.html">
+    <img src="hinh_header/New folder/girl-mood-background-2.jpg" width="300" height="300">
+    <span class="text-baner"><span class="text">Nón Vành</span></span> </div></a>
+	<div > <a href="non_snap.html"><img src="hinh_header/nón snap/4606179_collage_20150802110754285.jpg" width="300" height="300" >
+    <span class="text-baner"><span class="text">Snapback</span></span></a>
+    </div>
+	</div>
+
+ <!--stat-->    
+                         <div class="section">
+                         <div class="main" style=" background-color:rgba(0, 0, 0, 0.5);">
+                         		<div class="row">
+	<h1 style="text-align:center; color:white;"> NÓN LEN </h1>
+    <hr>
+  	<div class="column">
+    <div class="content">
+      <img src="hinh_header/nonlen/phukienpk533ava1bjpg1201.jpg" style="width:100%">
+      <h4>NÓN LEN THÊU TEXT -ind131</h4>
+      <p>Màu sắc: Trắng ,Kem ,Đen , Xanh navy</p>
+      <p>Giá: 99.000 VNĐ</p>
+      <button class="butt1">Mua Hàng</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+      <img src="hinh_header/nonlen/phukienpk552ava6bjpg2212.jpg" style="width:100%">
+      <h4>NÓN LEN THÊU TEM -ind132 </h4>
+      <p>Màu sắc: Trắng , Đen , Đỏ ,Đen</p>
+      <p>Giá: 129.000 VNĐ</p>
+      <button class="butt1">Mua Hàng</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+      <img src="hinh_header/nonlen/phukienpk510ava1bjpg0022.jpg" style="width:100%">
+      <h4>NÓN LEN THÊU TEXT -ind133</h4>
+      <p>Màu sắc : Camel , Đen , Hồng , Đỏ</p>
+      <p>Giá: 129.000 VNĐ</p>
+      <button class="butt1">Mua Hàng</button>
+    </div>
+  </div>
+
+  <div class="column ">
+    <div class="content">
+      <img src="hinh_header/nonlen/non-nu-pk505-2a.jpg" style="width:100%">
+      <h4>NÓN LEN IN TEM -ind134</h4>
+      <p>Màu sắc : Đen , Xám , Kem , Xanh navy , Đỏ </p>
+      <p>Giá: 99.000 VNĐ/p>
+      <button class="butt1">Mua Hàng</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+      <img src="hinh_header/nonlen/nonnupk489ava1jpg0111.jpg" height="457" style="width:100%">
+      <h4>NÓN LEN MÀU TRƠN -ind135</h4>
+      <p>Màu sắc : Xanh lá cây , Đen , Đỏ , Vàng , Xám , Xanh Navy </p>
+		<p>Giá: 90.000 VNĐ</p>
+        <button class="butt1">Mua Hàng</button>    
+    </div>
+  </div>
+
+  <div class="column ">
+    <div class="content">
+      <img src="hinh_header/nonlen/non-nu-pk465-ava1.jpg" height="457" style="width:100%">
+      <h4>NÓN NẤM -ind137</h4>
+      <p>Màu sắc : Đen , Đỏ , Hồng , Chocolate , Xanh dương.</p>
+      <p>Giá: 129.000 VNĐ</p>
+      <button class="butt1">Mua Hàng</button>
+    </div>
+  </div>
+  
+  <div class="column ">
+    <div class="content">
+      <img src="hinh_header/New folder/1418723842-jbvd1418720846-mu-len-doc-dao-1.jpg" style="width:100%">
+      <h4>NÓN THÚ -ind138</h4>
+      <p>Màu sắc : Cam </p>
+      <p>Giá: 129.000 VNĐ</p>
+      <button class="butt1">Hết Hàng</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+      <img src="hinh_header/nonlen/phukienpk545ava2bjpg0101.jpg" style="width:100%">
+      <h4>NÓN BERET CARO -ind136</h4>
+      <p>Màu sắc  : Nâu đậm, Nâu nhạt , Xám đậm , Xám nhạt </p>
+      <p>Giá: 129.000 VNĐ</p>
+      <button class="butt1">Mua Hàng</button>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+           
+
+ <!--start:non3-->
+ 
+<!--start:footer-->
+	<div id="footer">
+	<div class="row">
+            <div class="columnft"><h2> Thông Tin</h2> 
+            <span>Ind Hat cung cấp nón mũ lưỡi trai, snapback, nón vành, nón len. Đơn hàng từ 1 sp. Chất vải dầy đẹp, form chuẩn.  Giao hàng toàn quốc.
+				Nhận các đơn hàng lẻ, nhóm có đầu tư để mang tính chất thời trang, phụ kiện. Không nhận các đơn hàng đồng phục, sự kiện mang tính chất tạm thời.</span>
+                </div>
+            <div class="columnft"><h2>Giới Thiệu</h2>
+            <span>Sản phẩm Ind Hat hướng về cá tính và phong cách. Chúng tôi tin rằng mọi người đều có một cá tính riêng và chúng tôi muốn cho bạn một công cụ để thể hiện và tự hào về nó.
+             Cho dù bạn đang tìm kiếm con đường cho chính mình, chúng tôi sẽ đi cùng bạn trên con đường đó.</span>
+             
+             </div>
+            <div class="columnft"><h2>Liên Hệ</h2>
+                <span> <li><i class="fa fa-facebook-square"> http://facebook.com/inthat</i></li>
+                        <li><i class="fa fa-address-book"></i> Địa Chỉ: 146, Phan Văn Trị, Gò Vấp, TP.HCM</li>
+                        <li><i class="fa fa-phone"></i>0868474642</li>	
+                </span>
+            </div>
+        </div>
+        <hr>
+		<table width="99%">
+      <tbody>
+    <tr>
+      <td id="thanhvien" >
+		   <p>Thành viên nhóm: <br />
+		     Phạm Thị Cẩm Nhung MSSV: 16044861 <br />
+        Hoàng Thị Thùy Linh MSSV: 16017131</p></td>
+      <td >
+		  <p id="IndHat"><span id="I">I</span>nd <span id="H">H</span>at &nbsp;</p></td>
+      <td>
+		 <span id="TC"> <img src="hinh_header/Untitled.png" width="300" height="272"></span>
+		</td>
+			</tbody>
+		</table>
+    </div>
+<!--end:footer-->
+
+</body>
+</html>
+

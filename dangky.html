@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="filecss3.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery-3.3.1.min.js">
+</script><script src="jquery.validate.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+$(document).ready(function(e) {
+    
+  
+	$(".cancelbtn").click(function(e) {
+       $(location).attr('href',"web_ban_non - IndHat.html");
+    });
+	
+	$("#form2").validate({
+                    rules: {
+                        
+                        uname: "required",          
+                        psw: {
+                            required: true,
+                            minlength: 5
+                        },
+                        psw_repeat: {
+                            required: true,
+                            minlength: 5,
+                            equalTo: "#password"
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        },
+					
+					},
+                    messages: {
+                        uname: "Vui lòng nhập tên",
+                        psw: {
+                            required: 'Vui lòng nhập mật khẩu',
+                            minlength: 'Vui lòng nhập ít nhất 5 kí tự'
+                        },
+                        psw_repeat: {
+                            required: 'Vui lòng nhập mật khẩu',
+                            minlength: 'Vui lòng nhập ít nhất 5 kí tự',
+                            equalTo: 'Mật khẩu không trùng'
+                        },
+                        
+                        email: "Vui lòng nhập Email",
+                        
+					}
+                });
+				
+				$("#form1").validate({
+                    rules: {
+                        
+                        uname: "required",          
+                        psw: {
+                            required: true,
+                            minlength: 5
+                        },
+                       
+					},
+                    messages: {
+                        uname: "Vui lòng nhập tên",
+                        psw: {
+                            required: 'Vui lòng nhập mật khẩu',
+                            minlength: 'Vui lòng nhập ít nhất 5 kí tự'
+                        },
+                                              
+					}
+                });
+	
+});
+</script>
+<style>
+table{ background:url(hinh_header/atmosphere_rain_hat_turtle_happy-250015.jpg!d);
+
+}
+</style>
+</head>
+<body>
+
+
+<div class="section" >
+<table width="100%">
+      <tbody>
+       <tr>
+      <td id="thanhvien" >
+		   <p>Thành viên nhóm: <br />
+		     Phạm Thị Cẩm Nhung MSSV: 16044861 <br />
+        Hoàng Thị Thùy Linh MSSV: 16017131</p></td>
+      
+      
+        </tr>
+      <tr >
+      <td> 
+      						<form class="modal-content animate" id="form1" action="">
+    
+			  <div class="container">
+              <h1>Login</h1>
+          							<label for="uname"><b>Username</b></label>
+          							<input type="text" placeholder="Enter Username" name="uname" required>
+                                    <label for="psw"><b>Password</b></label>
+                                    <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+                                    <button type="submit">Login</button>
+                                    <label>
+            						<input type="checkbox" checked="checked" name="remember"> Remember me
+          							</label>
+                                    
+          							<span class="psw">Forgot <a href="#">password?</a></span>
+       							
+       						  </div>
+    							
+             					 <div class="clearfix" style="background-color:#f1f1f1">
+                                <button type="button" class="cancelbtn"style="width:100%">Cancel</button>
+                                
+                              </div>
+                    		</form>
+              </td>
+       		  <!--end form login-->
+             <!--start form sign up-->
+             <td>          
+                          <form class=" modal-content animate" id="form2" action="">
+                       
+                                 
+                         <div class="container">
+                         		<h1>Sign In</h1>
+                        	 <hr>
+                             <label for="uname"><b>Username</b></label>
+          							<input type="text" placeholder="Enter Username" name="uname" required>
+                              <label for="email"><b>Email</b></label>
+                              <input type="text" placeholder="Enter Email" name="email" required>
+                        
+                              <label for="psw"><b>Password</b></label>
+                              <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+                        
+                              <label for="psw-repeat"><b>Repeat Password</b></label>
+                              <input type="password" placeholder="Repeat Password" name="psw_repeat" required>
+                              
+                              <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                              </label>
+                        
+                              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                              <button type="submit"  style="width:100%">Sign In</button>
+                        </div>
+                             <div class="clearfix">
+                                <button type="button" class="cancelbtn" style="width:100%">Cancel</button>
+                               
+                            </div>
+                    	 </form>
+          			</td>
+                    </tr>
+			
+
+   
+		</tbody>
+		</table>
+</div>	
+
+
+</body>
+</html>
+
